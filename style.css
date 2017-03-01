@@ -2,23 +2,35 @@
 
 body { 
     font-family: 'Cabin', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    background-color: #e7f3ff;
+    /*background-color: #e7f3ff;*/
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
 }
+
 /* Header */
+#headerbg {
+    background-color: #e7f3ff;
+    height: 200px;
+    margin-bottom: -170px;
+    border-bottom: 2px solid #9bcdff;
+}
 #header {
-    text-align: center; 
+    text-align: center;
 }
 #header h1 {
     font-size: 3.5em;
+    margin: 0;
 }
 #header h2 {
     font-size: 2.5em;
-    margin-top: -50px;
+    margin-top: -20px;
 }
+
+/* Avatar */
 #avatar {
-    background: radial-gradient(circle closest-side, rgba(231, 243, 255,0) 85%, rgba(231, 243, 255,1) 95%), url("picture.jpg");
+    /*background: radial-gradient(circle closest-side, rgba(231, 243, 255,0) 85%, rgba(231, 243, 255,1) 95%), url("picture.jpg");*/
+    background: radial-gradient(circle closest-side, rgba(255, 255, 255,0) 85%, rgba(255, 255, 255,1) 95%), url("picture.jpg");
     height: 572px;
     width: 572px;
     margin: auto;
@@ -31,9 +43,6 @@ body {
 }
 p {
     font-size: 1.4em;
-}
-#content a {
-    text-decoration: underline;
 }
 
 /* Navigation */
@@ -51,29 +60,41 @@ ul.nav li:after {
 ul.nav li:last-child:after {
     content: "";
 }
+ul.nav li a {
+    color: #000000;
+}
+ul.nav li a:link, a:visited {
+    text-decoration: none;
+}
+
+ul.nav li a:active, a:hover {
+    text-decoration: underline;
+}
 
 /* Links */
 a {
-    color: #000000;
+    color: #4fa7ff;
 }
 a:link, a:visited {
     text-decoration: none;
 }
-
 a:active, a:hover {
     text-decoration: underline;
 }
 
-
 /* Mobile stuff */
 @media screen and (max-device-width: 736px) {
+    #headerbg {
+        height: 350px;
+        margin-bottom: -330px;
+    }
     #header h1 {
-        font-size: 8em;
+        font-size: 7em;
         font-weight: normal;
     }
     #header h2 {
         font-size: 5em;
-        margin-top: -80px;
+        margin-top: -40px;
         font-weight: normal;
     }
     #content {
