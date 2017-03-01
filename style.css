@@ -31,7 +31,6 @@ body {
 }
 p {
     font-size: 1.4em;
-    text-align: justify;
 }
 #content a {
     text-decoration: underline;
@@ -63,4 +62,25 @@ a:link, a:visited {
 
 a:active, a:hover {
     text-decoration: underline;
+}
+
+
+/* Mobile stuff */
+@media screen and (max-device-width: 736px) {
+    #header h1 {
+        font-size: 8em;
+        font-weight: normal;
+    }
+    #header h2 {
+        font-size: 5em;
+        margin-top: -80px;
+        font-weight: normal;
+    }
+    #content {
+        width: 98%;
+        font-size: 2em;
+    }
+    ul.nav {
+        font-size: 3em;
+    }
 }
