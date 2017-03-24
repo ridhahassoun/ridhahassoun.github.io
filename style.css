@@ -95,7 +95,7 @@ ul.nav li a:link, a:visited {
     text-decoration: none;
 }
 
-ul.nav li a:active, a:hover {
+ul.nav li a:hover, a:active {
     text-decoration: underline;
 }
 
@@ -106,7 +106,7 @@ a {
 a:link, a:visited {
     text-decoration: none;
 }
-a:active, a:hover {
+a:hover, a:active {
     text-decoration: underline;
 }
 
